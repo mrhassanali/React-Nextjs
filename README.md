@@ -42,3 +42,33 @@ Reactjs we can used in the Node.js in Api Section and Nexjs we used in the api f
   npm install multer
   npm install next-connect
 ```
+
+### NEXTjs Authentication
+
+https://www.youtube.com/watch?v=BXyDKfIe-es
+
+
+
+
+# Rest API
+
+
+
+## Usage/Examples
+
+```javascript
+const API_KEY = "valid";
+
+async function fetchData() {
+  const res = await fetch(`/api/posts?key=${API_KEY}`);
+  if (res.ok) {
+    const data = await res.json();
+    // Do something with the data
+  } else {
+    const error = await res.json();
+    // Handle the error
+  }
+}
+
+```
+
